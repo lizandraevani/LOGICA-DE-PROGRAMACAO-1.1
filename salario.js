@@ -1,12 +1,11 @@
 var salarioatual = parseFloat(prompt("digite o salario atual: R$"))
-var aumento = parseFloat(prompt("digite o aumento"))
-var novosalario = salarioatual*(1 +  aumento)
 
 if (salarioatual <= 500) {
-    aumento = 0.15; // 15%
-} else if (salarioatual <= 1000) {
-    aumento = 0.125; // 12,5%
+    novosalario = salarioatual*1.15
+} else if (500 > salarioatual && salarioatual <= 1000) {
+    novosalario = salarioatual*1.125
 } else {
-    aumento = 0.10; // 10%
+    novosalario = salarioatual*1.1
+    
 }
-console.log("salario atual: R$" + salarioatual.toFixed(2) + "\n" + "novo salario: R$" + novosalario.toFixed(2))
+console.log(`Seu novo salário é R$ ${novosalario.toFixed(3)}`)

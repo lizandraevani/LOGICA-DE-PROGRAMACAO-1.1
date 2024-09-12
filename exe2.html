@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exrcicio 2 - switch </title>
+</head>
+<body>
+     <h2>javascript switch</h2>
+     <p id="demo"></p>
+
+     <script>
+        let texto;
+        switch (new Date().getDay()) {
+            case 6:
+                texto = "hoje é sabado";
+                break;
+                case 0:
+                    texto = "hoje é domingo!";
+                    break;
+                    default:
+                        texto = "na espera do final de semana";
+
+        }
+        document.getElementById("demo").innerHTML = texto;
+     </script>
+</body>
+</html>

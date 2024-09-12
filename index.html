@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--<script src = "ex9.js"></script>-->
-    <!--<script src = "ex10.js"></script>-->
-    <script src = "salario.js"></script>
+    <title>teste javascript</title>
 </head>
 <body>
     
+    <h2>javascript switch</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let dia;
+            switch (new Date().getDay()) {
+
+                 case 0:
+                 dia = "domingo";
+                 break;
+
+                 case 1:
+                 dia = "segunda";
+                 break;
+
+                 case 2:
+                 dia = "terça";
+                 break;
+
+                 case 3:
+                 dia = "quarta"
+                 break;
+
+                 case 4:
+                 dia = "quinta";
+                 break;
+
+                 case 5:
+                 dia = "sexta";
+                 break;
+
+                 case 6:
+                 dia = "sabado";
+            
+        }
+        document.getElementById("demo").innerHTML = "hoje é " + dia;
+    </script>
 </body>
 </html>
